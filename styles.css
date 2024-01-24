@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    overflow-x:hidden;
+}
+
+
+
+img{
+    max-width:100%;
+}
+
+#wrapper{
+    min-height:100vh;
+}
+
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap:2rem;
+    padding:2rem;
+}
+
+h1{
+    user-select: none;
+}
+
+#light_mode{
+    position: absolute;
+    right:10rem;
+    top:2.5rem;
+    display:none;
+    cursor: pointer;
+}
+
+#dark_mode{
+    position: absolute;
+    right:10rem;
+    top:2.5rem;
+    cursor: pointer;
+}
+
+form{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+
+#search-field{
+    width:30%;
+    padding:0.8rem 1.2rem;
+    border:none;
+    box-shadow: 0 0 6px rgba(0,0,0,0.2);
+    border-radius:1.2rem;
+    color:#333;
+}
+
+#search-button{
+    padding:0.8rem 1.2rem;
+    background-color:#128065;
+    color:#fff;
+    font-size:1.2rem;
+    cursor:pointer;
+    box-shadow:0 0 6px rgba(0,0,0,0.2);
+    border-radius:0.5rem;
+    user-select: none;
+
+}
+
+#search-results{
+    min-height: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    max-width:1200px;
+    gap:2rem;
+}
+
+.search-result{
+    width:20rem;
+    height:20rem;
+    margin-bottom:60px;
+}
+
+.search-result img{
+    height:90%;
+    width:100%;
+    object-fit:cover;
+    border-radius:1rem;
+    transition:all 0.2s ease-in-out;
+}
+
+.search-result img:hover{
+    scale:1.02;
+    opacity:0.8;
+}
+
+.search-result a{
+    text-decoration: none;
+    color:#333;
+    text-transform: capitalize;
+    display:block;
+    padding:10px;
+}
+
+
+
+
+#show-more-button{
+    background-color:#008cba;
+    font-size:18px;
+    border:none;
+    color:#fff;
+    padding:10px 20px;
+    text-align: center;
+    display:block;
+    margin:30px auto;
+    border-radius:5px;
+    cursor:pointer;
+    display:none;
+}
+
+@media (max-width:870px) {
+    #box{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:2rem;
+    }
+
+    #light_mode{
+        position:static;
+        display:none;
+        cursor: pointer;
+    }
+    
+    #dark_mode{
+        position:static;
+        cursor: pointer;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:2rem;
+    background-color: #6f9196;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:0.7rem;
+    user-select: none;
+  }
+
