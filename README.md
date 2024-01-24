@@ -1,4 +1,4 @@
-#PicBloom-Discover in pixels#
+<b>PicBloom-Discover in pixels<b>
 <br>
 
 
